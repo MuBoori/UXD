@@ -1,0 +1,292 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+/* Please Keep this font import at the very top of any CSS file */
+@charset "UTF-8";
+/* Starter CSS for Flyout Menu */
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#cssmenu ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu span{
+  font-size: 10px;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: -2px;
+  right: 0;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  top: 1px;
+  left: 99%;
+}
+#cssmenu ul li {
+  float: none;
+}
+#cssmenu ul ul {
+  margin-top: 1px;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+/* Custom CSS Styles */
+#cssmenu {
+  width: 180px;
+  background: #333333;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  zoom: 1;
+  font-size: 12px;
+}
+#cssmenu:before {
+  content: '';
+  display: block;
+}
+#cssmenu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#cssmenu > ul {
+  width: 180px;
+}
+#cssmenu ul ul {
+  width: 180px;
+}
+#cssmenu > ul > li > a {
+  border-right: 4px solid #ff6600;
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li.active a {
+  background: #ff6600;
+}
+#cssmenu > ul > li a:hover,
+#cssmenu > ul > li:hover a {
+  background: #ff6600;
+}
+#cssmenu li {
+  position: relative;
+}
+#cssmenu ul li.has-sub > a:after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -6px;
+}
+#cssmenu ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+#cssmenu ul ul li.last {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  border-bottom: 0;
+}
+#cssmenu ul ul {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+#cssmenu ul ul {
+  border: 1px solid #cc5200;
+}
+#cssmenu ul ul a {
+  font-size: 12px;
+  color: #ffffff;
+}
+#cssmenu ul ul a:hover {
+  color: #ffffff;
+}
+#cssmenu ul ul li {
+  border-bottom: 1px solid #cc5200;
+}
+#cssmenu ul ul li:hover > a {
+  background: #ff6600;
+  color: #ffffff;
+}
+#cssmenu.align-right > ul > li > a {
+  border-left: 4px solid #cc5200;
+  border-right: none;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right li {
+  text-align: right;
+}
+#cssmenu.align-right ul li.has-sub > a:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -6px;
+}
+#cssmenu.align-right ul li.has-sub > a:after {
+  content: none;
+}
+#cssmenu.align-right ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+#cssmenu.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+#cssmenu.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+table.scroll {
+    /* width: 100%; */ /* Optional */
+    /* border-collapse: collapse; */
+    border-spacing: 0;
+    border: 2px solid black;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+thead tr th { 
+    height: 30px;
+    line-height: 30px;
+    /* text-align: left; */
+}
+
+table.scroll tbody {
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+
+tbody td, thead th {
+    /* width: 20%; */ /* Optional */
+
+    /* white-space: nowrap; */
+}
+
+tbody td:last-child, thead th:last-child {
+    border-right: none;
+}
+
+
+.chat-box {
+  font:normal normal 11px/1.4 Tahoma,Verdana,Sans-Serif;
+  color:#333;
+  width:200px; /* Chatbox width */
+  border:1px solid #344150;
+  border-bottom:none;
+  background-color:white;
+  position:fixed;
+  right:10px;
+  bottom:0;
+  z-index:9999;
+  -webkit-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  -moz-box-shadow:1px 1px 5px rgba(0,0,0,.2);
+  box-shadow:1px 1px 5px rgba(0,0,0,.2);
+}
+
+.chat-box > input[type="checkbox"] {
+  display:block;
+  margin:0 0;
+  padding:0 0;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  width:100%;
+  height:26px;
+  z-index:4;
+  cursor:pointer;
+  opacity:0;
+  filter:alpha(opacity=0);
+}
+
+.chat-box > label {
+  display:block;
+  height:24px;
+  line-height:24px;
+  background-color:#344150;
+  color:white;
+  font-weight:bold;
+  padding:0 1em 1px;
+}
+
+.chat-box > label:before {content:attr(data-collapsed)}
+
+.chat-box .chat-box-content {
+  padding:10px;
+  display:none;
+}
+
+/* hover state */
+.chat-box > input[type="checkbox"]:hover + label {background-color:#404D5A}
+
+/* checked state */
+.chat-box > input[type="checkbox"]:checked + label {background-color:#212A35}
+.chat-box > input[type="checkbox"]:checked + label:before {content:attr(data-expanded)}
+.chat-box > input[type="checkbox"]:checked ~ .chat-box-content {display:block}
