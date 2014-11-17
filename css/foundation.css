@@ -4797,7 +4797,7 @@ ul.off-canvas-list {
   left: -9999px;
   list-style: none;
   margin-left: 0;
-  width: 100%;
+  width: 200px;
   max-height: none;
   height: auto;
   background: white;
@@ -5880,6 +5880,14 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+  
+    .button.side {
+	
+	padding-right : 0px;
+	padding-left : 0px;
+	padding-top : 0px;
+	
+}
 
 /* Print visibility */
 @media print {
