@@ -31,10 +31,22 @@
     <li class="has-form">
   <div class="row collapse">
     <div class="large-8 small-9 columns">
-      <input type="text" placeholder="Find Stuff">
+	     <select onChange="window.document.location.href=this.options[this.selectedIndex].value;" value="GO">
+		 <option selected="selected">Search</option>
+          <option value="apples.html">Apples</option>
+          <option value="banana.html">Banana</option>
+          <option value="cheese.html">Cheese</option>
+		            <option value="milk.html">Milk</option>
+          <option value="Mushrooms.html">Mushrooms</option>
+          <option value="egg.html">Eggs</option>
+		            <option value="salmon.html">salmon</option>
+					          <option value="steaks.html">steaks</option>
+							            <option value="tomatos.html">Tomatos</option>
+        </select>
+      
     </div>
     <div class="large-4 small-3 columns">
-      <a href="#" class="alert button expand">Search</a>
+      <a href="appples.html" type="GET" class="alert button expand">Search</a>
     </div>
   </div>
 </li>
